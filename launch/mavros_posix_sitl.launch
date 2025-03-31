@@ -45,10 +45,12 @@
         <arg name="respawn_gazebo" value="$(arg respawn_gazebo)"/>
     </include>
     <!-- MAVROS -->
-    <include file="$(find mavros)/launch/px4.launch">
-        <!-- GCS link is provided by SITL -->
-        <arg name="gcs_url" value=""/>
-        <arg name="fcu_url" value="$(arg fcu_url)"/>
-        <arg name="respawn_mavros" value="$(arg respawn_mavros)"/>
-    </include>
+    <group ns="uav1">
+        <include file="$(find mavros)/launch/px4.launch">
+            <!-- GCS link is provided by SITL -->
+            <arg name="gcs_url" value=""/>
+            <arg name="fcu_url" value="$(arg fcu_url)"/>
+            <arg name="respawn_mavros" value="$(arg respawn_mavros)"/>
+        </include>
+    </group>
 </launch>

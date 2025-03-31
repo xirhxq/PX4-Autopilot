@@ -10,6 +10,12 @@ publications:
 
   - topic: /fmu/out/airspeed_validated
     type: px4_msgs::msg::AirspeedValidated
+    
+  - topic: /fmu/out/vehicle_command
+    type: px4_msgs::msg::VehicleCommand
+
+  - topic: /fmu/out/mission_result
+    type: px4_msgs::msg::MissionResult
 
   - topic: /fmu/out/arming_check_request
     type: px4_msgs::msg::ArmingCheckRequest
