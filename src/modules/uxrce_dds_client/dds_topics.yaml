@@ -52,7 +52,7 @@ publications:
 
   - topic: /fmu/out/transponder_report
     type: px4_msgs::msg::TransponderReport
- 
+
   # - topic: /fmu/out/vehicle_angular_velocity
   #   type: px4_msgs::msg::VehicleAngularVelocity
 
@@ -107,6 +107,12 @@ publications:
   - topic: /fmu/out/gimbal_device_attitude_status
     type: px4_msgs::msg::GimbalDeviceAttitudeStatus
     rate_limit: 20.
+
+  - topic: /fmu/out/vehicle_command
+    type: px4_msgs::msg::VehicleCommand
+
+  - topic: /fmu/out/mission_result
+    type: px4_msgs::msg::MissionResult
 
 # Create uORB::Publication
 subscriptions:
