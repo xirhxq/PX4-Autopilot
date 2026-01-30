@@ -111,8 +111,11 @@ publications:
   - topic: /fmu/out/vehicle_command
     type: px4_msgs::msg::VehicleCommand
 
-  - topic: /fmu/out/mission_result
-    type: px4_msgs::msg::MissionResult
+  - topic: /fmu/out/vehicle_rates_setpoint
+    type: px4_msgs::msg::VehicleRatesSetpoint
+
+  - topic: /fmu/out/vehicle_attitude_setpoint
+    type: px4_msgs::msg::VehicleAttitudeSetpoint
 
 # Create uORB::Publication
 subscriptions:
